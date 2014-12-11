@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript" src='https://code.jquery.com/jquery-2.1.1.min.js'></script>
+  </head>
+  <body>
+    <iframe id='video' src='https://www.youtube.com/embed/xKQ2PERQwp8?autoplay=1&loop=1' frameborder="0" allowfullscreen></iframe>
+  </body>
+  <script type="text/javascript">
+    $(function(){
+      $('#video').css({ width: $(window).innerWidth() + 'px', height: $(window).innerHeight() + 'px' });
+
+      $(window).resize(function(){
+        $('#video').css({ width: $(window).innerWidth() + 'px', height: $(window).innerHeight() + 'px' });
+      });
+    });
+  </script>
+</html>
